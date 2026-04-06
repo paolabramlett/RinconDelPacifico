@@ -13,16 +13,16 @@
 :root {
   --sand:       #F5F0E8;
   --sand-dark:  #EDE7D8;
-  --ocean:      #1A6B72;
-  --ocean-light:#2A8A93;
-  --ocean-pale: #E8F4F5;
-  --warm-white: #FDFAF5;
+  --ocean:      #1a4572;
+  --ocean-light:#2a7093;
+  --ocean-pale: #e8edf5;
+  --warm-white: #fdf8f5;
   --text:       #1C1C1C;
-  --text-muted: #666660;
-  --text-light: #999990;
+  --text-muted: #666560;
+  --text-light: #999690;
   --wa-green:   #25D366;
   --wa-dark:    #1DA851;
-  --accent:     #C9793A;
+  --accent:     #E48B53;
   --accent-light:#F0D4B8;
   --border:     #E2D9CC;
   --radius:     10px;
@@ -30,7 +30,7 @@
   --shadow-sm:  0 2px 8px rgba(0,0,0,0.07);
   --shadow-md:  0 6px 24px rgba(0,0,0,0.10);
   --shadow-lg:  0 16px 48px rgba(0,0,0,0.13);
-  --font-body:  'Georgia', serif;
+  --font-body:  'Montserrat', sans-serif;
   --font-ui:    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --max-w:      1140px;
   --section-py: 72px;
@@ -52,6 +52,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -149,9 +150,20 @@ ul {
   border: 2px solid var(--ocean);
 }
 
+.btn-call-two {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
 .btn-call:hover {
   background: var(--ocean);
   color: #fff;
+}
+
+.btn-call-two:hover {
+  background: #ffffff;
+  color: var(--ocean);
 }
 
 .btn-wa-outline {
@@ -264,14 +276,14 @@ ul {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: #0F3D42;
+  background: #0f1a42;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
   /* IMAGE PLACEHOLDER — replace src with actual hero photo */
-  background: linear-gradient(135deg, #0F3D42 0%, #1A6B72 40%, #2A8A93 100%);
+  background: linear-gradient(135deg, #5a2a12a5 0%, #72461ac2 40%, #93672ab4 100%);
   z-index: 0;
 }
 
@@ -328,7 +340,7 @@ ul {
 
 .hero-title em {
   font-style: normal;
-  color: #7FD4DC;
+  color: #7facdc;
 }
 
 .hero-sub {
@@ -346,7 +358,7 @@ ul {
 }
 
 .hero-price-hint strong {
-  color: #7FD4DC;
+  color: #7facdc;
   font-size: 16px;
 }
 
@@ -453,7 +465,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
   background: linear-gradient(135deg, var(--sand-dark), var(--ocean-pale));
   color: var(--text-muted);
   font-size: 13px;
@@ -880,13 +891,14 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 20px 0;
+  padding: 20px 12px;
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
   transition: color 0.15s;
   user-select: none;
+  width: 100%;
 }
 
 .faq-q:hover {
@@ -992,7 +1004,7 @@ ul {
 
 /* --- Footer --- */
 .site-footer {
-  background: #0D2F33;
+  background: #0d1833;
   color: rgba(255,255,255,0.70);
   padding: 48px 0 28px;
 }
